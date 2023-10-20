@@ -11,6 +11,7 @@
 		A1D995722AE1641100C39FBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D995712AE1641100C39FBF /* ContentView.swift */; };
 		A1D995742AE1641200C39FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D995732AE1641200C39FBF /* Assets.xcassets */; };
 		A1D995772AE1641200C39FBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D995762AE1641200C39FBF /* Preview Assets.xcassets */; };
+		A1EAEDAC2AE237330019CA79 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAEDAB2AE237330019CA79 /* Styles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A1D995712AE1641100C39FBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A1D995732AE1641200C39FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D995762AE1641200C39FBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A1EAEDAB2AE237330019CA79 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				A1D9956F2AE1641100C39FBF /* DesignCodeiOS15App.swift */,
 				A1D995712AE1641100C39FBF /* ContentView.swift */,
+				A1EAEDAB2AE237330019CA79 /* Styles.swift */,
 				A1D995732AE1641200C39FBF /* Assets.xcassets */,
 				A1D995752AE1641200C39FBF /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EAEDAC2AE237330019CA79 /* Styles.swift in Sources */,
 				A1D995722AE1641100C39FBF /* ContentView.swift in Sources */,
 				A1D995702AE1641100C39FBF /* DesignCodeiOS15App.swift in Sources */,
 			);
@@ -275,11 +279,13 @@
 				DEVELOPMENT_TEAM = 9V5HHJM5MV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Design Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +310,13 @@
 				DEVELOPMENT_TEAM = 9V5HHJM5MV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Design Code";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
