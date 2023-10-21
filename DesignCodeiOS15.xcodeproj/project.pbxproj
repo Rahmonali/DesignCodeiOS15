@@ -12,6 +12,7 @@
 		A1D995742AE1641200C39FBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D995732AE1641200C39FBF /* Assets.xcassets */; };
 		A1D995772AE1641200C39FBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D995762AE1641200C39FBF /* Preview Assets.xcassets */; };
 		A1EAEDAC2AE237330019CA79 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAEDAB2AE237330019CA79 /* Styles.swift */; };
+		A1EAEDB42AE2B40B0019CA79 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EAEDB32AE2B40B0019CA79 /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		A1D995732AE1641200C39FBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1D995762AE1641200C39FBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A1EAEDAB2AE237330019CA79 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		A1EAEDB32AE2B40B0019CA79 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				A1D9956F2AE1641100C39FBF /* DesignCodeiOS15App.swift */,
 				A1D995712AE1641100C39FBF /* ContentView.swift */,
+				A1EAEDB32AE2B40B0019CA79 /* AccountView.swift */,
 				A1EAEDAB2AE237330019CA79 /* Styles.swift */,
 				A1D995732AE1641200C39FBF /* Assets.xcassets */,
 				A1D995752AE1641200C39FBF /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1EAEDB42AE2B40B0019CA79 /* AccountView.swift in Sources */,
 				A1EAEDAC2AE237330019CA79 /* Styles.swift in Sources */,
 				A1D995722AE1641100C39FBF /* ContentView.swift in Sources */,
 				A1D995702AE1641100C39FBF /* DesignCodeiOS15App.swift in Sources */,
