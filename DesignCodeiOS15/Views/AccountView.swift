@@ -68,7 +68,7 @@ extension AccountView {
     private var menu: some View {
         Section {
             NavigationLink {
-                ContentView()
+                HomeView()
             } label: {
                 Label("Account", systemImage: "gear")
             }
@@ -80,7 +80,7 @@ extension AccountView {
             }
             
             NavigationLink {
-                ContentView()
+                HomeView()
             } label: {
                 Label("Help", systemImage: "questionmark")
             }
