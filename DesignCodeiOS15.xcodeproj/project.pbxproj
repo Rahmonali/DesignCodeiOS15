@@ -22,6 +22,7 @@
 		A1EDDCED2AE771F0005FF975 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCEC2AE771F0005FF975 /* NavigationBar.swift */; };
 		A1EDDCEF2AE77ACB005FF975 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCEE2AE77ACB005FF975 /* PreferenceKeys.swift */; };
 		A1EDDCF12AE77E5E005FF975 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCF02AE77E5E005FF975 /* AnimatableFontModifier.swift */; };
+		A1EDDCFA2AE8C0A1005FF975 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCF92AE8C0A1005FF975 /* Course.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		A1EDDCEC2AE771F0005FF975 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		A1EDDCEE2AE77ACB005FF975 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		A1EDDCF02AE77E5E005FF975 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
+		A1EDDCF92AE8C0A1005FF975 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				A1EAEDBF2AE623A00019CA79 /* Tab.swift */,
 				A1EDDCEE2AE77ACB005FF975 /* PreferenceKeys.swift */,
+				A1EDDCF92AE8C0A1005FF975 /* Course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				A1EDDCED2AE771F0005FF975 /* NavigationBar.swift in Sources */,
 				A1EAEDB82AE3EA3D0019CA79 /* BlobView.swift in Sources */,
 				A1D995722AE1641100C39FBF /* ContentView.swift in Sources */,
+				A1EDDCFA2AE8C0A1005FF975 /* Course.swift in Sources */,
 				A1D995702AE1641100C39FBF /* DesignCodeiOS15App.swift in Sources */,
 				A1EDDCEB2AE770C4005FF975 /* FeaturedItem.swift in Sources */,
 				A1EDDCEF2AE77ACB005FF975 /* PreferenceKeys.swift in Sources */,
