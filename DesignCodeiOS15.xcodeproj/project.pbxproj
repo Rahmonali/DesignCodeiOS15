@@ -23,6 +23,7 @@
 		A1EDDCEF2AE77ACB005FF975 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCEE2AE77ACB005FF975 /* PreferenceKeys.swift */; };
 		A1EDDCF12AE77E5E005FF975 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCF02AE77E5E005FF975 /* AnimatableFontModifier.swift */; };
 		A1EDDCFA2AE8C0A1005FF975 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCF92AE8C0A1005FF975 /* Course.swift */; };
+		A1EDDCFC2AE8C9A4005FF975 /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDDCFB2AE8C9A4005FF975 /* MatchedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A1EDDCEE2AE77ACB005FF975 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
 		A1EDDCF02AE77E5E005FF975 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		A1EDDCF92AE8C0A1005FF975 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		A1EDDCFB2AE8C9A4005FF975 /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				A1EAEDB32AE2B40B0019CA79 /* AccountView.swift */,
 				A15E243A2AE638C50027ABEE /* HomeView.swift */,
+				A1EDDCFB2AE8C9A4005FF975 /* MatchedView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15E243B2AE638C50027ABEE /* HomeView.swift in Sources */,
+				A1EDDCFC2AE8C9A4005FF975 /* MatchedView.swift in Sources */,
 				A1EAEDB42AE2B40B0019CA79 /* AccountView.swift in Sources */,
 				A1EAEDB62AE3E5F40019CA79 /* HexagonView.swift in Sources */,
 				A1EAEDAC2AE237330019CA79 /* Styles.swift in Sources */,
