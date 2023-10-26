@@ -9,9 +9,10 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @State var hasScrolled = false
     @Namespace var namespace
+    @State var hasScrolled = false
     @State var show = false
+    @State var showStatusBar = true
     
     var body: some View {
         ZStack {
@@ -31,8 +32,9 @@ struct HomeView: View {
                 if !show {
                     CourseItem(namespace: namespace, show: $show)
                         .onTapGesture {
-                            withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
+                            withAnimation(.openCard) {
                                 show.toggle()
+                                showStatusBar = false
                             }
                         }
                 }
@@ -47,6 +49,16 @@ struct HomeView: View {
             
             if show {
                 CourseView(namespace: namespace, show: $show)
+            }
+        }
+        .statusBar(hidden: !showStatusBar)
+        .onChange(of: show) { newValue in
+            withAnimation (.closeCard) {
+                if newValue {
+                    showStatusBar = false
+                } else {
+                    showStatusBar = true
+                }
             }
         }
     }

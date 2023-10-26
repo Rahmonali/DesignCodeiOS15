@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CourseView: View {
     
-    var namespace: Namespace.ID 
+    var namespace: Namespace.ID
     @Binding var show: Bool
     
     var body: some View {
@@ -20,22 +20,7 @@ struct CourseView: View {
             .background(Color("Background"))
             .ignoresSafeArea()
             
-            Button {
-                withAnimation(.spring(response: 0.6, dampingFraction: 0.8)) {
-                    show.toggle()
-                }
-            } label: {
-                Image(systemName: "xmark")
-                    .font(.body.weight(.bold))
-                    .foregroundStyle(Color.secondary)
-                    .padding(8)
-                    .background(
-                        .ultraThinMaterial, in: Circle()
-                    )
-            }
-            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
-            .padding(20)
-            .ignoresSafeArea()
+            button
         }
     }
 }
@@ -106,5 +91,24 @@ extension CourseView {
             .offset(y: 250)
             .padding(20)
         }
+    }
+    
+    private var button: some View {
+        Button {
+            withAnimation(.closeCard) {
+                show.toggle()
+            }
+        } label: {
+            Image(systemName: "xmark")
+                .font(.body.weight(.bold))
+                .foregroundStyle(Color.secondary)
+                .padding(8)
+                .background(
+                    .ultraThinMaterial, in: Circle()
+                )
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+        .padding(20)
+        .ignoresSafeArea()
     }
 }
