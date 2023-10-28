@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15C013A2AED47F600A39022 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15C01392AED47F600A39022 /* Model.swift */; };
 		A15E243B2AE638C50027ABEE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15E243A2AE638C50027ABEE /* HomeView.swift */; };
 		A19BBE032AEA227F0084B2FF /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BBE022AEA227F0084B2FF /* CourseItem.swift */; };
 		A19BBE052AEA235E0084B2FF /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BBE042AEA235E0084B2FF /* CourseView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A15C01392AED47F600A39022 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A15E243A2AE638C50027ABEE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A19BBE022AEA227F0084B2FF /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		A19BBE042AEA235E0084B2FF /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				A1EAEDBF2AE623A00019CA79 /* Tab.swift */,
 				A1EDDCEE2AE77ACB005FF975 /* PreferenceKeys.swift */,
 				A1EDDCF92AE8C0A1005FF975 /* Course.swift */,
+				A15C01392AED47F600A39022 /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				A1EDDCEB2AE770C4005FF975 /* FeaturedItem.swift in Sources */,
 				A19BBE072AEA28E20084B2FF /* Animations.swift in Sources */,
 				A1EDDCEF2AE77ACB005FF975 /* PreferenceKeys.swift in Sources */,
+				A15C013A2AED47F600A39022 /* Model.swift in Sources */,
 				A1EAEDBE2AE61FB70019CA79 /* TabBar.swift in Sources */,
 				A1EDDCF12AE77E5E005FF975 /* AnimatableFontModifier.swift in Sources */,
 			);
