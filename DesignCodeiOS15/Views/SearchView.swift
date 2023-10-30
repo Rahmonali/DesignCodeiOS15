@@ -10,6 +10,9 @@ import SwiftUI
 struct SearchView: View {
     
     @State private var text = ""
+    @State private var show = false
+    @Namespace var namespace
+    @State private var selectedIndex = 0
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -54,30 +57,42 @@ struct SearchView: View {
                     })
                 }
             }
+            .sheet(isPresented: $show) {
+                CourseView(namespace: namespace, course: courses[selectedIndex], show: $show)
+            }
         }
     }
 }
 
 extension SearchView {
     private var content: some View {
-        ForEach(courses.filter { $0.title.contains(text) || text == "" }) { course in
-            HStack(alignment: .top, spacing: 12) {
-                Image(course.image)
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 44, height: 44)
-                    .background(Color("background"))
-                    .mask(Circle())
-                VStack (alignment: .leading, spacing: 4){
-                    Text(course.title).bold()
-                    Text(course.text)
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .multilineTextAlignment(.leading)
+        ForEach(Array(courses.enumerated()), id: \.offset) { index, course in
+            if course.title.contains(text) || text == "" {
+                if index != 0 { Divider() }
+                Button {
+                    show = true
+                    selectedIndex = index
+                } label: {
+                    HStack(alignment: .top, spacing: 12) {
+                        Image(course.image)
+                            .resizable()
+                            .scaledToFill()
+                            .frame(width: 44, height: 44)
+                            .background(Color("background"))
+                            .mask(Circle())
+                        VStack (alignment: .leading, spacing: 4){
+                            Text(course.title).bold()
+                                .foregroundStyle(Color.primary)
+                            Text(course.text)
+                                .font(.footnote)
+                                .foregroundStyle(Color.secondary)
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .multilineTextAlignment(.leading)
+                        }
+                    }
+                    .padding(.vertical, 4)
                 }
             }
-            .padding(.vertical, 4)
         }
     }
 }
