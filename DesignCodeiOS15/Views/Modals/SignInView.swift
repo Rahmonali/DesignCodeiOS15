@@ -23,6 +23,7 @@ struct SignInView: View {
     @State private var circleColor: Color = .blue
     @State private var appear = [false, false, false]
     @EnvironmentObject var model: Model
+    @AppStorage("isLogged") var isLogged = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
@@ -60,7 +61,9 @@ struct SignInView: View {
                         passwordY = value
                     }
                 
-                Button(action: {}, label: {
+                Button(action: {
+                    isLogged = true
+                }, label: {
                     Text("Sign in")
                         .frame(maxWidth: .infinity)
                 })
