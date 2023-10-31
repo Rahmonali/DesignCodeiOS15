@@ -14,6 +14,8 @@
 		A16F36AF2AEF675900F47571 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F36AE2AEF675900F47571 /* SignUpView.swift */; };
 		A16F36B12AEF6B3E00F47571 /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F36B02AEF6B3E00F47571 /* AngularButtonStyle.swift */; };
 		A16F36B32AEFDF9800F47571 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F36B22AEFDF9800F47571 /* InputStyle.swift */; };
+		A16F36B52AF10E7D00F47571 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F36B42AF10E7D00F47571 /* ModalView.swift */; };
+		A16F36B72AF10F2100F47571 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16F36B62AF10F2100F47571 /* SignInView.swift */; };
 		A19BBE032AEA227F0084B2FF /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BBE022AEA227F0084B2FF /* CourseItem.swift */; };
 		A19BBE052AEA235E0084B2FF /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BBE042AEA235E0084B2FF /* CourseView.swift */; };
 		A19BBE072AEA28E20084B2FF /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19BBE062AEA28E20084B2FF /* Animations.swift */; };
@@ -43,6 +45,8 @@
 		A16F36AE2AEF675900F47571 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		A16F36B02AEF6B3E00F47571 /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
 		A16F36B22AEFDF9800F47571 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
+		A16F36B42AF10E7D00F47571 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		A16F36B62AF10F2100F47571 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		A19BBE022AEA227F0084B2FF /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		A19BBE042AEA235E0084B2FF /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		A19BBE062AEA28E20084B2FF /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
@@ -94,7 +98,7 @@
 				A1EDDCFB2AE8C9A4005FF975 /* MatchedView.swift */,
 				A19BBE042AEA235E0084B2FF /* CourseView.swift */,
 				A10D454E2AEE8F7A00E37C97 /* SearchView.swift */,
-				A16F36AE2AEF675900F47571 /* SignUpView.swift */,
+				A16F36B82AF114C200F47571 /* Modals */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -132,6 +136,16 @@
 				A16F36B22AEFDF9800F47571 /* InputStyle.swift */,
 			);
 			path = Style;
+			sourceTree = "<group>";
+		};
+		A16F36B82AF114C200F47571 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				A16F36AE2AEF675900F47571 /* SignUpView.swift */,
+				A16F36B62AF10F2100F47571 /* SignInView.swift */,
+				A16F36B42AF10E7D00F47571 /* ModalView.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 		A1D995632AE1641100C39FBF = {
@@ -255,6 +269,7 @@
 				A1EDDCED2AE771F0005FF975 /* NavigationBar.swift in Sources */,
 				A16F36B12AEF6B3E00F47571 /* AngularButtonStyle.swift in Sources */,
 				A1EAEDB82AE3EA3D0019CA79 /* BlobView.swift in Sources */,
+				A16F36B72AF10F2100F47571 /* SignInView.swift in Sources */,
 				A1D995722AE1641100C39FBF /* ContentView.swift in Sources */,
 				A1EDDCFA2AE8C0A1005FF975 /* Course.swift in Sources */,
 				A1D995702AE1641100C39FBF /* DesignCodeiOS15App.swift in Sources */,
@@ -267,6 +282,7 @@
 				A15C013A2AED47F600A39022 /* Model.swift in Sources */,
 				A1EAEDBE2AE61FB70019CA79 /* TabBar.swift in Sources */,
 				A1EDDCF12AE77E5E005FF975 /* AnimatableFontModifier.swift in Sources */,
+				A16F36B52AF10E7D00F47571 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
