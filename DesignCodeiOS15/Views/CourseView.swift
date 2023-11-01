@@ -16,6 +16,8 @@ struct CourseView: View {
     @EnvironmentObject var model: Model
     @State private var viewState: CGSize = .zero
     @State private var isDraggable = true
+    @State private var showSection = false
+    @State private var selectedIndex = 0
     
     var body: some View {
         ZStack {
@@ -104,17 +106,25 @@ extension CourseView {
     }
     
     private var content: some View {
-        VStack(alignment: .leading, spacing: 30) {
-            Text("SwiftUI helps you build great-looking apps across all Apple platforms with the power of Swift — and surprisingly little code.")
-                .font(.title3).fontWeight(.medium)
-            Text("This course")
-                .font(.title).bold()
-            Text("Build sophisticated animations with expanded animation support. Use phases to create sequences of animations, or create multiple animation tracks using keyframes. SwiftUI automatically transfers the velocity of a user gesture to your animations so your app feels fluid and natural.")
-            Text("Share more of your SwiftUI code with your watchOS apps. Scroll vertical TabViews using the crown, match colors with adaptive background containers, take advantage of edge-to-edge displays with new ToolbarItem placements, and leverage NavigationSplitView to build detailed list views.")
-                .font(.title.bold())
-            Text("When you recompile your SwiftUI apps for visionOS, you can add depth and 3D objects to windows or present volumes. Use RealityView to bring in RealityKit content alongside your views and controls. And you can use SwiftUI and RealityKit together to build Full Space immersive experiences.")
+        VStack(alignment: .leading) {
+            ForEach(Array(courseSections.enumerated()), id: \.offset) { index, section in
+                if index != 0 {
+                    Divider()
+                }
+                
+                SectionRow()
+                    .onTapGesture {
+                        selectedIndex = index
+                        showSection = true
+                    }
+            }
         }
+        .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+        .strokeStyle(cornerRadius: 30)
         .padding(20)
+        .sheet(isPresented: $showSection, content: {
+            SectionView(section: courseSections[selectedIndex])
+        })
     }
     
     private var button: some View {
