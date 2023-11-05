@@ -14,6 +14,7 @@ struct TitleModifier: ViewModifier {
             .foregroundStyle(.secondary)
             .frame(maxWidth: .infinity, alignment: .leading)
             .padding(20)
+            .accessibilityAddTraits(.isHeader)
     }
 }
 

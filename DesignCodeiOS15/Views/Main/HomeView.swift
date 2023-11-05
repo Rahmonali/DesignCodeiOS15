@@ -126,6 +126,8 @@ extension HomeView {
                             showCourse = true
                             selectedIndex = index
                         }
+                        .accessibilityElement(children: .combine)
+                        .accessibilityAddTraits(.isButton)
                 }
             }
         }
@@ -134,6 +136,7 @@ extension HomeView {
         .background(
             Image("Blob 1")
                 .offset(x: 250, y: -100)
+                .accessibilityHidden(true)
         )
         .sheet(isPresented: $showCourse) {
             CourseView(namespace: namespace, course: featuredCourses[selectedIndex], show: $showCourse)
@@ -151,6 +154,8 @@ extension HomeView {
                         selectedID = course.id
                     }
                 }
+                .accessibilityElement(children: .combine)
+                .accessibilityAddTraits(.isButton)
         }
     }
     
